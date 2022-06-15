@@ -5,8 +5,8 @@ TARGET = a.out
 SRC = ./src
 
 #compilador
-CC = gcc
-LEX =	lex
+CC = gcc 
+LEX =	flex
 lex1:
 	$(LEX) $(SRC)/lex.l
 	$(CC) lex.yy.c -ll
